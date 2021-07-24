@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Kapcsolatok</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-loading">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Megkönnyebbülés</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Fő</a></li>
+            <li><a href="blog.html">Cikkek</a></li>
+            <li class="active"><a href="contact.html">Kapcsolatok</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <section>
+            <form method="post" action="thanks.html">
+                <div class="field">
+                    <label for="name">Név</label>
+                    <input type="text" name="name" id="name" required/>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required/>
+                </div>
+                <div class="field">
+                    <label for="message">A szöveg a hozzászólás</label>
+                    <textarea name="message" id="message" rows="3" required></textarea>
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms"><a href="policy.html" target="_blank">
+                            Elolvastam, majd elfogadja a felhasználási feltételek, a felhasználói szerződés
+                        </a></label>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Küldeni"/></li>
+                </ul>
+            </form>
+        </section>
+        <section class="split contact">
+            <section class="alt">
+                <h3>Cím</h3>
+                <p>5126 Székesfehérvár, Farkas udvar 86.</p>
+            </section>
+            <section>
+                <h3>Telefonszám</h3>
+                <p><a href="#">+2087867342361</a></p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p><a href="#">janos.nemes@gal.com</a></p>
+            </section>
+            <section>
+                <ul class="icons alt">
+                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </div>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <div class="row">
+            <div style="width: 100%; margin-bottom: 2rem">
+                <ul style="display: flex; justify-content: space-between">
+                    <li><a href="index.html">Fő</a></li>
+                    <li><a href="blog.html">Cikkek</a></li>
+                    <li><a href="contact.html">Kapcsolatok</a></li>
+                    <li><a href="policy.html">Adatvédelmi politika</a></li>
+                    <li><a href="terms.html">Általános szerződési feltételek</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li>&copy; Megkönnyebbülés</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class='cookie-banner'>
+    <p>
+        Az oldal cookie-kat használ. Ezek lehetővé teszik számunkra, hogy ismerje meg információt kap arról, hogy a felhasználó experience.By tovább böngészni az oldalt, egyetértek, hogy a cookie-k használatát, amelyet a webhely tulajdonosa megfelelően  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie-politika</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+<script>
+    window.onload = function () {
+        $('.close-cookie').click(function () {
+            $('.cookie-banner').fadeOut();
+        })
+    }
+</script>
+<script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
